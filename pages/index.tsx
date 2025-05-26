@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 
-const VoiceAssistantWidget = dynamic(() => import("../components/VoiceAssistantWidget"), { ssr: false });
+const VoiceAssistantWidget = dynamic(() => import("../components/VoiceAssistantWidget"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
